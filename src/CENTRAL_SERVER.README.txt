@@ -1,0 +1,29 @@
+*Due to time constraints, right now all players must be playing
+the same IP Address as the Central Server*
+
+How to setup and run the Central Server:
+
+1) Make sure that your MySQL is properly set up:
+	- In a MySQL connection, using Port 3306, create a 
+	Schema titled, "bomberman"
+	- Import the provided tables, "users" and "gamerecords"
+	into the bomberman Schema
+	- In the hard code of src.centralServer.MySQLDriver,
+	make sure the username and password in the: 
+	"private final static String connectionString"
+	are correct for your specific MySQL connection.
+
+2) Start the src.centralServer.BMCentralServer
+	- this is where the main(String args[]) for the 
+	Central Server is located.
+
+3) Type in an appropriate port number, then click the 
+"Start Listening" button
+
+4) Press the "connect" button to connect to the MySQL database
+
+Players should now be able to connect to the Central Server with 
+their indiviudal src.centralServer.BMCentralServerClient's
+
+*Due to time constraints, right now all players must be playing
+the same IP Address as the Central Server*
